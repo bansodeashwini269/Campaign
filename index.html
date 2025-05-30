@@ -2,118 +2,137 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>PRM Campaign Management</title>
+  <title>PRM Campaigns | Boost Your Partner Network</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f4f4f4;
-    }
-    h1 {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #ffffff;
       color: #333;
     }
-    .campaign-form, .campaign-list {
-      background-color: white;
-      padding: 20px;
-      margin-bottom: 30px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    header {
+      background: #0d6efd;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
     }
-    label {
-      display: block;
+    nav {
+      text-align: center;
       margin-top: 10px;
     }
-    input, textarea, select {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #0d6efd;
+      font-weight: bold;
     }
-    button {
-      margin-top: 15px;
-      padding: 10px 20px;
-      background-color: #007bff;
+    .hero {
+      background: #f4f8ff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      color: #555;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 50px 20px;
+    }
+    .feature-box {
+      flex: 1 1 300px;
+      background: #fff;
+      margin: 15px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .feature-box h3 {
+      color: #0d6efd;
+    }
+    .cta {
+      background: #0d6efd;
       color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .cta h2 {
+      margin-bottom: 10px;
+    }
+    .cta button {
+      padding: 10px 25px;
+      background: white;
+      color: #0d6efd;
       border: none;
+      font-size: 1em;
       border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    table th, table td {
-      padding: 12px;
-      border: 1px solid #ddd;
-      text-align: left;
-    }
-    table th {
-      background-color: #007bff;
-      color: white;
+    footer {
+      background: #f0f0f0;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #666;
     }
   </style>
 </head>
 <body>
 
-  <h1>Campaign Management</h1>
+<header>
+  <h1>Partner Campaign Hub</h1>
+  <p>Grow smarter. Reward better. Partner faster.</p>
+</header>
 
-  <div class="campaign-form">
-    <h2>Create New Campaign</h2>
-    <form id="campaignForm">
-      <label for="name">Campaign Name</label>
-      <input type="text" id="name" name="name" placeholder="e.g. Summer Promotion">
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Features</a>
+  <a href="#">Use Cases</a>
+  <a href="#">Contact</a>
+</nav>
 
-      <label for="type">Campaign Type</label>
-      <select id="type" name="type">
-        <option value="email">Email</option>
-        <option value="referral">Referral</option>
-        <option value="loyalty">Loyalty</option>
-        <option value="discount">Discount</option>
-      </select>
+<section class="hero">
+  <h1>Power Your PRM with Effective Campaigns</h1>
+  <p>Launch referral, loyalty, and seasonal campaigns that engage your partners and drive revenue growth.</p>
+</section>
 
-      <label for="description">Description</label>
-      <textarea id="description" name="description" rows="3" placeholder="Campaign details..."></textarea>
-
-      <label for="startDate">Start Date</label>
-      <input type="date" id="startDate" name="startDate">
-
-      <label for="endDate">End Date</label>
-      <input type="date" id="endDate" name="endDate">
-
-      <button type="submit">Create Campaign</button>
-    </form>
+<section class="features">
+  <div class="feature-box">
+    <h3>Referral Campaigns</h3>
+    <p>Incentivize your partners to bring in new business through structured and automated referral programs.</p>
   </div>
-
-  <div class="campaign-list">
-    <h2>Active Campaigns</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Campaign Name</th>
-          <th>Type</th>
-          <th>Start Date</th>
-          <th>End Date</th>
-          <th>Status</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Summer Promo</td>
-          <td>Discount</td>
-          <td>2025-06-01</td>
-          <td>2025-07-31</td>
-          <td>Active</td>
-        </tr>
-        <tr>
-          <td>Referral Boost</td>
-          <td>Referral</td>
-          <td>2025-05-01</td>
-          <td>2025-06-15</td>
-          <td>Paused</td>
-        </tr>
-      </tbody>
-    </table>
+  <div class="feature-box">
+    <h3>Loyalty Rewards</h3>
+    <p>Keep partners engaged with loyalty campaigns that reward consistent performance and collaboration.</p>
   </div>
+  <div class="feature-box">
+    <h3>Seasonal Promotions</h3>
+    <p>Launch time-bound offers to boost sales and build excitement during key business periods.</p>
+  </div>
+  <div class="feature-box">
+    <h3>Performance Analytics</h3>
+    <p>Track which campaigns work best and optimize for better partner engagement and conversions.</p>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Start your first campaign today!</h2>
+  <p>Join hundreds of brands using our PRM to supercharge their partner ecosystem.</p>
+  <button>Get Started</button>
+</section>
+
+<footer>
+  &copy; 2025 PRM Campaign Hub. All rights reserved.
+</footer>
 
 </body>
 </html>
